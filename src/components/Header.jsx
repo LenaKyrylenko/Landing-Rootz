@@ -22,16 +22,16 @@ const Header = () => {
           <nav className="menu__body">
              <ul className={show ? "menu__list" : "none"}>
             <Logo />
-          <secion className='menu__list_center'>
+          <section className='menu__list_center'>
               <li> <a href="" className="menu__link">Home</a></li>
               <li> <a href="" style={{whiteSpace: "nowrap" }} className="menu__link">Our mission</a></li>
               <li><a href="" className="menu__link">Places</a></li>
               <li><a href="" className="menu__link">Team</a></li>
-              </secion>
+              </section>
             <button href="" className="menu__link_button">Apply</button>
             </ul>
           </nav>
-          <hr style={{ width: "100%", color: "black", backgroundColor: "black" }}></hr>
+          <hr style={{ width: "100%", color: "black",margin:"0 auto", padding:"0 auto", backgroundColor: "black" }}></hr>
         </div>
       </div>
     </header>
