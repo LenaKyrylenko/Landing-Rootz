@@ -3,7 +3,8 @@ import Card from '../materials/Card'
 import Headline from '../materials/Headline'
 import Parrot from '../materials/Parrot'
 import { UserOutlined } from '@ant-design/icons';
-import { Input } from 'antd';
+import { Input, Row, Col } from 'antd';
+import 'antd/dist/antd.css';
 import React from 'react';
 const SearchPrefix = () =>
     <span style={{margin:'5px'}}>
@@ -15,8 +16,17 @@ const SearchPrefix = () =>
 const Search = () =>
 <div className="search-container">
         <form action=''>
-        <Input size="large" placeholder="Find the place to help" prefix={<SearchPrefix />} />
-        <button type="submit">
+            <Input size="large"
+                class="ant-input"
+                placeholder="Find the place to help"
+                prefix={<SearchPrefix />}
+                style={{
+                    border: "none", width: "60%", borderRadius: "40px",
+                    onFocus: { border: "yellow" }
+                }}
+                onFocus={(x) => console.log('xxx ',x)}
+            />
+        <button className='btn search-container__btn' type="submit">
             Search
             
             </button>
@@ -27,6 +37,7 @@ const Search = () =>
 const Main = () => {
   return (
       <div className='Main'>
+         
           <section>
               <Headline className='Main__title'/>
              <div className='Main__text'>
@@ -41,7 +52,8 @@ const Main = () => {
           <div>
               <Parrot />
               <Card/>
-          </div> 
+                  </div>
+          
     </div>
   )
 }
