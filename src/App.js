@@ -5,6 +5,7 @@ import Main from './components/MainHome'
 import OurTeam from './components/OurTeam';
 import Form from './components/contact/index';
 import QA from './components/q&a';
+import  Slider  from './components/slider/index';
 function App() {
   return (
     <div className="App">
@@ -12,7 +13,8 @@ function App() {
       <Main />
       <OurTeam />
       <Form />
-      <QA/>
+      <QA />
+      <Slider/>
     </div>
   );
 }
