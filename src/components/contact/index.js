@@ -3,7 +3,7 @@ import TextStarted from './TextStarted'
 import Login from './Login'
 const Form = () => {
   return (
-    <div className="Form">
+    <div className="Form" id="apply">
       <Row>
         <Col span={12} offset={1} style={{ padding: '100px 0px 20px 0px' }}>
           <TextStarted />

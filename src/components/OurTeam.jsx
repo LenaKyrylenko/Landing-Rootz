@@ -7,7 +7,7 @@ import LeftArrow from '../materials/LeftArrow'
 import RightArrow from '../materials/RightArrow'
 const OurTeam = () => {
   return (
-    <div className="OurTeam">
+    <div className="OurTeam" id={"team"}>
       <section>
         {/* <Headline className='Main__title'/> */}
         <div>

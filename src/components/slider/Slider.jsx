@@ -181,7 +181,7 @@ const Gallery = ({
   // const [navigationNextEl, navigationNextRef] = useSwiperRef();
   return (
     <>
-      <div className="Carousel">
+      <div className="Carousel" id="mission">
         {/* <div className={``}> */}
           {/* <div className={styles.swiper_wrapper}> */}
             <Swiper
@@ -345,9 +345,7 @@ const Gallery = ({
                 ref={navigationPrevRef}
                 src={chevron_left}
           />
-          {/* <div
-						ref={paginationRef}
-						className={styles.eco_pagination}></div> */}
+        
               <div ref={paginationRef} className={styles.eco_pagination}></div>
               <img
                 className="swiper-btn-next"
@@ -357,22 +355,7 @@ const Gallery = ({
               />
             </div>
           </div>
-        {/* </div> */}
-      {/* </div> */}
-      {/* <p className="append-buttons">
-        <button onClick={() => prepend2()} className="prepend-2-slides">
-          Prepend 2 Slides
-        </button>
-        <button onClick={() => prepend()} className="prepend-slide">
-          Prepend Slide
-        </button>
-        <button onClick={() => append()} className="append-slide">
-          Append Slide
-        </button>
-        <button onClick={() => append2()} className="append-2-slides">
-          Append 2 Slides
-        </button>
-      </p> */}
+       
     </>
   )
 }

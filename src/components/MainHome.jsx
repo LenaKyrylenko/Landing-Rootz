@@ -4,8 +4,11 @@ import Headline from '../materials/Headline'
 import Parrot from '../materials/Parrot'
 import { UserOutlined } from '@ant-design/icons';
 import { Input, Row, Col } from 'antd';
+import CountUp from 'react-countup';
 import 'antd/dist/antd.css';
 import React from 'react';
+import VisibilitySensor from 'react-visibility-sensor';
+// import './styles.css';
 const SearchPrefix = () =>
     <span style={{margin:'5px'}}>
     <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,6 +16,19 @@ const SearchPrefix = () =>
 </svg>
  </span>
 
+
+
+  const Counter = ()=>
+      <div className="content" >
+      <VisibilitySensor partialVisibility offset={{ }}>
+        {({ isVisible }) => (
+          <div style={{ height: 100 }}>
+            {isVisible ? <CountUp duration={5} end={29000} /> : null}
+          </div>
+        )}
+      </VisibilitySensor>
+    </div>
+  
 const Search = () =>
 <div className="search-container">
         <form action=''>
@@ -51,7 +67,9 @@ const Main = () => {
           
           <div>
               <Parrot />
-              <Card/>
+              {/* <CountUp style={{zIndex:'3'}} end={100} /> */}
+              <Counter/>
+              <Card />
                   </div>
           
     </div>

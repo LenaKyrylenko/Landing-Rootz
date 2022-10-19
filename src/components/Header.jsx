@@ -24,11 +24,11 @@ const Header = () => {
             <Logo />
           <section className='menu__list_center'>
               <li> <a href="" className="menu__link">Home</a></li>
-              <li> <a href="" style={{whiteSpace: "nowrap" }} className="menu__link">Our mission</a></li>
+              <li> <a href="#mission" style={{whiteSpace: "nowrap" }} className="menu__link">Our mission</a></li>
               <li><a href="" className="menu__link">Places</a></li>
-              <li><a href="" className="menu__link">Team</a></li>
+              <li><a href="#team" className="menu__link">Team</a></li>
               </section>
-            <button href="" className="menu__link_button">Apply</button>
+            <button href="#apply" className="menu__link_button">Apply</button>
             </ul>
           </nav>
           <hr style={{ width: "100%", color: "black",margin:"0 auto", padding:"0 auto", backgroundColor: "black" }}></hr>
