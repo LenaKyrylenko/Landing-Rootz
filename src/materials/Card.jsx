@@ -1,9 +1,9 @@
 import card from '../materials/Сard.png'
-
+import styles from '../components/main/Main.module.scss'
 const Card = () => {
     return (
       // <div >
-<img className='image-card' src={card}/>
+<img style={{display:"block"}} className={styles.imageCard} src={card}/>
       // </div>
     );
   }

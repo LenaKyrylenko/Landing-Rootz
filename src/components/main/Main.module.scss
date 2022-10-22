@@ -1,0 +1,108 @@
+
+.btn {
+//   font-family: $fontFamily;
+  // display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  background: #f2726c;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  border: none;
+  &:hover {
+    box-shadow: 0px 3px rgba(118, 117, 253, 0.5);
+    ;  
+  }
+}
+.MainHome{
+    background-color: #f7f3f4;
+    display: block;
+    width: 100%;
+    background: linear-gradient(0deg, #f7f3f4, #f7f3f4),
+    linear-gradient(0deg, #febd2f, #febd2f),
+    radial-gradient(178.57% 327.71% at 110.1% 3.35%, #ff605b 0%, #ffee30 100%);
+
+}
+.Main {
+
+  padding: 100px 200px 170px 200px;
+  // display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  position: relative;
+  // flex: 1 1 auto;
+  &__title {
+    margin: 0 0 60px 0;
+  }
+  &__text {
+    width: 450px;
+  }
+  .imageParrot {
+    display: block;
+    left: 150px;
+    position: relative;
+
+  }
+
+
+  .ant-input:focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(40, 72, 229, 0.2);
+    box-shadow: 0 0 0 2px rgba(40, 72, 229, 0.2);
+  }
+
+  .imageCard {
+    // width: 272px;
+    // height: 320px;
+    position: absolute;
+    bottom: -125px;
+    right: 53px;
+  }
+  
+  .Counter {
+    z-index: 3;
+      position: absolute;
+    // font-family:
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    bottom: -100px;
+    color: white;
+    left: 120px;
+    p {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      color: white;
+    }
+  }
+  .searchContainer {
+    justify-content: left;
+    padding:10px 15px;
+    font-size: 17px;
+    background: #ffffff;
+    display: block;
+    align-items: center;
+    box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+    border-radius: 40px;
+    &__btn {
+        @extend .btn;
+      display: flex;
+      float: right;
+      padding: 15px 30px;
+
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
