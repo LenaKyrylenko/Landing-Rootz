@@ -1,0 +1,109 @@
+
+.Form {
+    // display: flex;
+    // flex-direction: column;
+    background: #ffbd9e;
+    border-radius: 20px;
+    margin: 0 200px;
+  
+    padding: 0px 80px;
+    // display: flex;
+    // flex-direction: row;
+    flex: 1 1 auto;
+    // .Login{
+    // flex-direction: column;
+  
+    //   }
+  
+    &__title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 56px;
+      /* identical to box height, or 140% */
+      margin: 200px 0px 40px 0px;
+      text-transform: capitalize;
+      // text-align: center;
+  
+      color: #222433;
+    }
+  
+    &__text {
+      //
+      // margin-right: auto;
+      // margin-left: auto;
+  
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: #1e1a20;
+      width: 380px;
+      vertical-align: baseline;
+      opacity: 0.9;
+    }
+    .Login {
+      padding: 40px;
+      margin: 100px 20px;
+  
+      background: #f7f3f4;
+      border-radius: 16px;
+      p {
+        text-align: center;
+        font-weight: 600;
+        font-size: 32px;
+        padding: 20px;
+        // line-height: 56px;
+        /* identical to box height, or 175% */
+  
+        text-transform: capitalize;
+  
+        color: #222433;
+      }
+      &__btn {
+        width: 90%;
+        padding: 20px;
+        margin: 20px;
+      }
+      form {
+        display: block;
+  
+        width: 100%;
+        color: white;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        input {
+        //   font-family: $fontFamily;
+          margin-bottom: 20px;
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          box-sizing: border-box;
+          color: #807c7c;
+          border-radius: 40px;
+  
+          // display: flex;
+          // flex-direction: column;
+          // margin: 15px;
+          padding: 15px 20px;
+        }
+      }
+      &__vector1 {
+        // position: relative;
+        // display: flex;
+  
+        // margin-left: 60px;
+        top: 80px;
+        position: absolute;
+        left: 470px;
+      }
+      &__vector2 {
+        // position: relative;
+        // display: flex;
+        float: right;
+        top: 170px;
+        left: 480px;
+  
+        position: absolute;
+      }
+    }
+  }

@@ -1,11 +1,11 @@
 import TextReady from "./TextReady"
 import { Row, Col } from 'antd'
 import 'antd/dist/antd.css';
-
+import styles from './Questions.module.scss'
 import QuestionAnswer from './QuestionsAnswers'
 const QA = () =>
 
-    <div className="QA">
+  <div className={styles.QA}>
           <Row>
             
             <Col span={12}>

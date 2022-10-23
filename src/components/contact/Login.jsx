@@ -1,8 +1,9 @@
 import { Input } from 'antd'
+import styles from './Contact.module.scss'
 
 const VectorLogin = () => (
   <>
-    <div className="Login__vector1">
+    <div className={styles.Login__vector1}>
       <svg
         width="61"
         height="56"
@@ -17,7 +18,7 @@ const VectorLogin = () => (
         />
       </svg>
     </div>
-    <div className="Login__vector2">
+    <div className={styles.Login__vector2}>
       <svg
         width="40"
         height="22"
@@ -36,13 +37,13 @@ const VectorLogin = () => (
 const Login = () => (
   <>
     <VectorLogin />
-    <div className="Login">
+    <div className={styles.Login}>
       <p> Log in </p>
 
       <form action="">
         <Input size="large" placeholder="Name" />
         <Input size="large" placeholder="Email" />
-        <button className='btn Login__btn'> Book a demo</button>
+        <button className={`btn ${styles.Login__btn}`}> Book a demo</button>
       </form>
     </div>
   </>

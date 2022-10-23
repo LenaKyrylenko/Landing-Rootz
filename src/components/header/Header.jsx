@@ -21,8 +21,8 @@ const Header = () => {
           <span></span>
          
         </div>
-        <Logo />
-        <hr></hr>
+      
+      
        
         <div
           className={
@@ -41,7 +41,7 @@ const Header = () => {
           {/* </div> */}
           <nav className={styles.menu__body}>
             <ul className={styles.menu__list}>
-             
+               <Logo />
               <section className={styles.menu__list_center}>
                 <li>
                   {' '}
@@ -74,8 +74,9 @@ const Header = () => {
                 Apply
               </a>
             </ul>
+          
           </nav>
-        
+          <hr></hr>
         </div>
       </div>
     </header>

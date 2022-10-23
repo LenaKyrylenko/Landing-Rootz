@@ -76,7 +76,7 @@ const Search = () => (
         }}
         onFocus={(x) => console.log('xxx ', x)}
       />
-      <button className={styles.searchContainer__btn} type="submit">
+      <button className={`btn ${styles.searchContainer__btn}`} type="submit">
         Search
       </button>
     </form>

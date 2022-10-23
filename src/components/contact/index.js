@@ -1,14 +1,15 @@
 import { Input, Col, Row } from 'antd'
 import TextStarted from './TextStarted'
 import Login from './Login'
+import styles from './Contact.module.scss'
 const Form = () => {
   return (
-    <div className="Form" id="apply">
+    <div className={styles.Form} id="apply">
       <Row>
-        <Col span={8}  style={{ padding: '100px 0px 20px 0px' }}>
+        <Col span={10}>
           <TextStarted />
         </Col>
-        <Col span={12}>
+        <Col offset={1} span={13}>
           <Login />
         </Col>
       </Row>

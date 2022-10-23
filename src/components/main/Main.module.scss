@@ -1,23 +1,4 @@
 
-.btn {
-//   font-family: $fontFamily;
-  // display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  color: #ffffff;
-  background: #f2726c;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 13px;
-  border: none;
-  &:hover {
-    box-shadow: 0px 3px rgba(118, 117, 253, 0.5);
-    ;  
-  }
-}
 .MainHome{
     background-color: #f7f3f4;
     display: block;
@@ -30,14 +11,14 @@
 .Main {
 
   padding: 100px 200px 170px 200px;
-  // display: flex;
+  display: flex;
   width: 100%;
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
   justify-content: space-between;
   position: relative;
-  // flex: 1 1 auto;
+  flex: 1 1 auto;
   &__title {
     margin: 0 0 60px 0;
   }
@@ -48,7 +29,8 @@
     display: block;
     left: 150px;
     position: relative;
-
+    width: 458.44px;
+    height: 565px;
   }
 
 
@@ -93,7 +75,7 @@
     box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
     border-radius: 40px;
     &__btn {
-        @extend .btn;
+   
       display: flex;
       float: right;
       padding: 15px 30px;
