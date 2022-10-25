@@ -3,13 +3,16 @@ import Union from '../../materials/Union'
 import Close from '../../materials/Close'
 import Logo from '../../materials/Logo'
 import styles from './Header.module.scss'
+import {Col,Row} from 'antd'
 const Header = () => {
   const [show, setShow] = useState(true)
   return (
     <header className={styles.Header}>
-      <div className={styles.Header__content_container}>
-       
-        <div
+     
+     
+        <div className={styles.Header__content}>
+        
+          <div
           onClick={() => setShow(!show)}
           className={
             show
@@ -19,11 +22,9 @@ const Header = () => {
         >
           {' '}
           <span></span>
-         
+        
         </div>
-      
-      
-       
+
         <div
           className={
             show
@@ -31,24 +32,24 @@ const Header = () => {
               : `${styles.Header__menu}  ${styles.active} `
           }
         >
-          {' '}
-          {/* <div className="menu_icon icon-menu"> */}
-          {/* {show ? <Union onClick={() => setShow(false)} />
-            :
-            <Close onClick={() => setShow(true)} />
-          
-          } */}
-          {/* </div> */}
           <nav className={styles.menu__body}>
             <ul className={styles.menu__list}>
-               <Logo />
-              <section className={styles.menu__list_center}>
+              <Row>
+                  <Col>
+                  <Logo />
+                  
+                  </Col>
+                <section className={styles.menu__list_center}>
+             
+                  <Col>
                 <li>
                   {' '}
                   <a href="" className={styles.menu__link}>
                     Home
                   </a>
-                </li>
+                    </li>
+                  </Col>
+                  <Col>
                 <li>
                   {' '}
                   <a
@@ -58,27 +59,39 @@ const Header = () => {
                   >
                     Our mission
                   </a>
-                </li>
+                    </li>
+                  </Col>
+                 <Col>
                 <li>
                   <a href="" className={styles.menu__link}>
                     Places
                   </a>
-                </li>
+                    </li>
+                  </Col>
+                  <Col>
                 <li>
                   <a href="#team" className={styles.menu__link}>
                     Team
                   </a>
-                </li>
-              </section>
+                    </li>
+                  </Col>
+               
+                <Col>
               <a href="#apply" className={styles.menu__link_button}>
                 Apply
-              </a>
+                </a> 
+                  </Col>
+                </section>
+              </Row>
             </ul>
-          
           </nav>
-          <hr></hr>
+        
         </div>
+        
       </div>
+      <hr/>
+    
+      
     </header>
   )
 }

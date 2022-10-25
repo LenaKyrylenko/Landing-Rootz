@@ -4,10 +4,12 @@
   // max-width: 1280px;
   align-items: center;
   margin: 0 auto;
-  width: 100%;
   max-width: 1320px;
-
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  width: 90%;
+  overflow: hidden;
   &__title {
     font-weight: 700;
     font-size: 40px;
@@ -19,41 +21,50 @@
     color: #222433;
   }
   &__images {
+    width: 100%;
+    padding-top: 100px;
+
+    margin-bottom: 300px;
     display: flex;
-    position: relative;
+    justify-content: center;
 
     img {
-      display: block;
+      // display: block;
       //   height: 367px;
 
       &:first-child {
-        //   position: relative;
-        width: 323px;
-        height: 274px;
+        // position: absolute;
+        // width: 323px;
+        // height: 274px;
         // top: -50px;
         // left: 50px;
+        position: absolute;
+        margin-left: -400px;
+        margin-top: -90px;
+      }
+      &__block_images {
+        display: flex;
+        justify-content: center;
       }
       &:nth-of-type(2) {
-        //   position: relative;
+        position: absolute;
 
-        //   top: -340px;
-        //   left: 450px;
+        margin-top: 50px;
         //   z-index: 2;
         // display: flex;
-        width: 330px;
-        height: 263px;
-        align-items: flex-end;
-        margin-top: 150px;
-        margin-left: 100px;
-
+        // width: 330px;
+        // height: 263px;
+        // align-items: flex-end;
       }
       &:nth-of-type(3) {
+        position: absolute;
+        margin-left: 400px;
+        margin-top: -90px;
+        // bottom:400px;
         //   position: relative;
         //   left: 1000px;
         //   top: -920px;
-        margin-left: 118px;
-        width: 276px;
-        height: 312px;
+        // margin-left: 118px;
       }
     }
   }
@@ -61,14 +72,14 @@
     position: absolute;
 
     z-index: -1;
-    margin-left: 200px;
-    margin-top: 20px;
+    margin-left: -200px;
+    margin-top: -80px;
   }
   &__right_arrow {
     position: absolute;
-    top: 150px;
     z-index: -1;
-    right: 100px;
+    margin-left: 200px;
+    margin-top: 60px;
   }
   &__text {
     font-weight: 400;

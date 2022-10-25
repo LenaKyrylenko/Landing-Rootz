@@ -25,13 +25,14 @@
   &__text {
     width: 450px;
   }
-  .imageParrot {
-    display: block;
-    left: 150px;
-    position: relative;
-    width: 458.44px;
-    height: 565px;
-  }
+  // .imageParrot {
+  //   display: flex;
+  //   left: 150px;
+  //   position: relative;
+  //   width: 458.44px;
+  //   height: 565px;
+   
+  // }
 
 
   .ant-input:focus {
@@ -44,8 +45,8 @@
     // width: 272px;
     // height: 320px;
     position: absolute;
-    bottom: -125px;
-    right: 53px;
+    bottom: -85px;
+    right: 230px;
   }
   
   .Counter {
@@ -55,9 +56,9 @@
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
-    bottom: -100px;
+    bottom: -70px;
     color: white;
-    left: 120px;
+    left: -50px;
     p {
       font-weight: 700;
       font-size: 20px;

@@ -72,7 +72,7 @@ const Search = () => (
           border: 'none',
           width: '60%',
           borderRadius: '40px',
-          onFocus: { border: 'yellow' },
+          
         }}
         onFocus={(x) => console.log('xxx ', x)}
       />
@@ -99,7 +99,7 @@ const Main = () => {
               </div>
             </section>
           </Col>
-          <Col offset={4} span={10}>
+          <Col offset={6} span={10}>
             <Parrot />
 
             <Counter />

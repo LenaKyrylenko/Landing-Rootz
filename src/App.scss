@@ -9,9 +9,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+$fontFamily: 'Poppins';
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: $fontFamily;
+  font-style: normal;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -52,7 +53,7 @@ img {
   margin: 0 auto;
 }
 
-$fontFamily: 'Poppins';
+
 $maxWidthContainer: 1120;
 $minWidth: 320px;
 $maxWidth: 1440;
@@ -181,200 +182,49 @@ body {
     top: 52px;
     svg {
       transition: 0.4s;
-      // &:hover {
-      //   // fill: red;
-      // }
+    
     }
   }
 }
-.Carousel {
-  // padding: 500px;
-  // margin:300px;
-  background: #ffbd9e;
-  justify-content: center;
-  &__arrow {
-    cursor: pointer;
-    padding: 5px;
+  
+  .swiper_pagination-current {
+	color: rgb(0, 0, 0.2);
   }
-  // display: inline-block;
-}
 
-.swiper {
-  width: 100%;
-  height: 60%;
-}
 
-.swiper-slide {
+  .swiper-button-prev,
+  .swiper-button-next {
+	cursor: pointer;
+  width: 8px;
+	height: 15px;
+	margin: 0px 600px;
+	overflow: hidden;
+  &:hover {
+		opacity: 0.5;
+	}
+	transition: opacity 0.3s;
+
+  }
+  .swiper-button-hidden{
+    transition: scale(1.2);
+    }
+  .swiper_pagination {
+	color: rgba(0, 0, 0, 1);
+	font-size: 24px;
   text-align: center;
-  font-size: 18px;
-  // background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.item-svg {
-  z-index: 2;
-
-}
-// .item_img{
-//   width: 700px;
-//   height: 700px;
-// }
-.slide_bg_1 {
-  z-index: 2;
-
-  image {
-    // width: 100px;
+ 
   }
-}
-.swiper-slide-active {
-  .morph_container {
-    .slide_duble_title {
-      position: absolute;
-      z-index: -4;
-      color: rgb(183, 58, 58);
-    }
+  
+
+  
+  .swiper-btns {
+	align-items: center;
+	justify-content: center;
+
+	display: flex;
+	flex-direction: row;
+
+	cursor: pointer;
+	top: -140px;
+	position: relative;
   }
-}
-
-.swiper-slide-active {
-  .slide-duble-title {
-    z-index: -4;
-  }
-  // .{
-  //   color:red;
-  // display: none;
-
-  .item-svg {
-    // width: 200px;
-    position: absolute;
-    z-index: 3;
-    display: block;
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin-bottom:80px;
-    margin-right: 120px;
-  }
-  .slide_bg_1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: none;
-    height: 100%;
-    z-index: 2;
-    // transform: scale(0.6);
-    transform: scale(1.8);
-
-    svg {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: center;
-    }
-  }
-  img {
-    width: 50px;
-  }
-  width: 100px;
-  image {
-    display: none;
-  }
-  transform: scale(2); // увеличение на 20%
-  //   transition: transform .2s ease;
-}
-
-.append-buttons {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.append-buttons button {
-  display: inline-block;
-  cursor: pointer;
-  border: 1px solid #007aff;
-  color: #007aff;
-  text-decoration: none;
-  padding: 4px 10px;
-  border-radius: 4px;
-  margin: 0 10px;
-  font-size: 13px;
-}
-.swiper-wrapper {
-  // width: 1000px;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  cursor: pointer;
-
-}
-
-.swiper_pagination {
-  color: rgba(0, 0, 0, 0.2);
-  font-size: 24px;
-}
-
-.swiper_pagination-current {
-  color: rgb(0, 0, 0);
-}
-
-.swiper-btns {
-  align-items: center;
-  justify-content: center;
-  // cursor: pointer;
-  // display: inline-block;
-  display: flex;
-  flex-direction: row;
-  // width: 400px;
-  // left:320px;
-  cursor: pointer;
-  top: -65px;
-  position: relative;
-}
-.mySwiper {
-  padding: 100px;
-  height: 500px;
-}
-.swiper-pagination .swiper-pagination-fraction .swiper-pagination-horizontal {
-  bottom: 100px;
-}
-.swiper-btn-next {
-  cursor: pointer;
-  // left:50px;
-  margin: 30px;
-  overflow: hidden;
-}
-.swiper-btn-prev {
-  cursor: pointer;
-  overflow: hidden;
-  margin: 30px;
-}
-.swiper-button-prev {
-  left: 63% !important;
-  top: 40% !important;
-  transform: rotate(90deg);
-  transform-origin: left center;
-}
-.swiper-button-next {
-  left: 63% !important;
-  bottom: 49% !important;
-  transform: rotate(90deg);
-  transform-origin: left center;
-}
-.content {
-  z-index: 3;
-}

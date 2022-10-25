@@ -5,7 +5,9 @@ import MainHome from './components/main/index'
 import Team from './components/team/index';
 import Form from './components/contact/index';
 import QA from './components/q&a';
-import  Slider  from './components/slider/index';
+import Slider from './components/slider/index';
+import  Footer  from './components/footer/index';
+
 function App() {
   return (
     <div className="App">
@@ -14,7 +16,8 @@ function App() {
       <Team />
       <Form />
       <QA />
-      <Slider/>
+      <Slider />
+      <Footer/>
     </div>
   );
 }

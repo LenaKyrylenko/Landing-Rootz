@@ -1,199 +1,189 @@
+.Carousel {
+  background: #ffbd9e;
+  justify-content: center;
+  &__arrow {
+    cursor: pointer;
+    padding: 5px;
+  }
+  height: 600px;
+  padding: 100px 0px;
+  // display: inline-block;
+}
 ._container {
-	align-items: center;
+  align-items: center;
 }
 
 .slide_item {
-	height: 283px;
-	width: 330px;
-	position: relative;
+//   height: 503px;
+//   width: 600px;
+  position: relative;
 
-	@media screen and (max-width: 640px) {
-		//height: 300px;
-	}
+  @media screen and (max-width: 640px) {
+    //height: 300px;
+  }
 }
 
 .item_img {
-	filter: brightness(85%);
-width: 400px;
-height: 600px;
+  filter: brightness(85%);
 }
 
-.slide_bg_1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-
-	// z-index: 2;
-	// transform: scale(0.6);
-	transform: scale(0.6);
-
-	svg {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-		object-position: center;
-	}
+.slide_bg {
+  position: absolute;
+  margin-top: 30px;
+  transform: scale(1.2);
+  // margin:0px 0px;
 }
-// .slide_bg_1-active{
-// 	transform: scale(1.7);
-// 	z-index: 6;
+.active_photo {
+  position: absolute;
+  transition: 0.3 ease-in-out;
+  transition: transform 0.2s ease;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  // z-index: 6;
+}
 
-// }
-// .slide-duble-title{
-// 	color: red;
-// }
 .swiper-slide-active .container {
-	transform: scale(1.2); // увеличение на 20%
-	transition: transform .2s ease;
-  }
-.swiper-slide-active .container {
-//   transform: scale(1.5); 
-  z-index: -2;
-//   width: 60%;
-.slide_duble_title{
-    color:red;
-  }
-//   height: 60%;
-  // увеличение на 20%
-  transition: transform .2s ease;
-}
-.swiper-slide-duplicate-active{
-	transform: scale(1.5); 
-	color:red;
-	// z-index: 2;
-	// width: 60%;
-	// height: 60%;
-	// // увеличение на 20%
-	// transition: transform .2s ease;
-}
-
-.slide_description {
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding-top: 46px;
-}
-
-.slide_title,
-.slide_duble_title {
-	font-family: 'Poppins-SemiBold';
-	font-size:20px;
-	//  1.1rem;
-	line-height: 34px;
-
-	@media screen and (max-width: 640px) {
-		font-size: 20px;
-		// 1.125rem;
-		line-height: 26px;
-	}
-}
-
-.slide_title {
-	color: black;
-}
-.slide_duble_title {
-	position: absolute;
-	z-index: 4;
-	// font-size: 20px;;
-	color: rgb(255, 255, 255);
-	
-}
-.swiper-slide-active{
-.slide_duble_title {
-	position: absolute;
-	z-index: -4;
-	// font-size: 20px;;
-	color: rgb(164, 115, 115);
-	
-}
-
-}
-.morph_container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  transform: scale(2); // увеличение на 20%
+  transition: transform 0.2s ease;
 }
 
 .slide_text {
-	font-size: 0.7rem;
-	text-align: center;
-	color: #1e1a20;
-	mix-blend-mode: normal;
-	opacity: 0.9;
-	max-width: 210px;
+  // 	font-weight: 400;
+  // font-size: 10px;
+  // 	text-align: center;
+  // 	color: #1e1a20;
+  // 	opacity: 0.9;
+  // 	max-width: 170px;
+  text-align: center;
+  // width: 100%;
+  // height: 100%;
+  width: 220px;
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // flex-direction: column;
+  margin-top: 150px;
 }
 
-.swiper-pagination {
-	text-align: center;
+.slide_title {
+  position: absolute;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  mix-blend-mode: normal;
+  text-align: center;
+  // width: 100%;
+  // height: 100%;
+  // position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  z-index: 3;
+  margin-left: 35px;
+  margin-top: 100px;
 }
 
-.navigation_container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 32px;
-}
+// .slide_no_title{
+// 	@extend .slide_title;
+// }
+.slide_active_title {
+  @extend .slide_title;
+  margin-left: 80px;
 
-.eco_pagination,
-.eco_pagination span {
-	font-size: 1.5rem;
-	line-height: 32px;
-	color: black;
-
-	@media screen and (max-width: 640px) {
-		font-size: 1.375rem;
-	}
+  color: #000;
 }
-// .swiper-slide-active  {
-//   defs{
-//     image{
-//     width: 50px;
-//     height: 50px;
-//   }}
-//   transform: scale(1.5);
-//  z-index: -2; 
-//   // увеличение на 20%
-// //   transition: transform .2s ease;
+// .slide_text {
+// 	font-weight: 400;
+// font-size: 10px;
+// 	text-align: center;
+// 	color: #1e1a20;
+// 	opacity: 0.9;
+// 	max-width: 170px;
+// }
+.slide_no_text {
+  opacity: 0;
+}
+// .swiper-pagination {
+// 	text-align: center;
+// }
+// .swiper-button-prev {
+//     color: red;
 // }
 
-.eco_pagination {
-	margin: 0 42px;
-	width: max-content;
+// .swiper-button-next {
+//     color: #000;
+// }
+// .navigation_container {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	padding-top: 32px;
+// }
 
-	@media screen and (max-width: 640px) {
-		margin: 0 48px;
-	}
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.prev,
-.next {
-	width: 8px;
-	height: 26px;
-	cursor: pointer;
-	transition: opacity 0.3s;
-
-	&:hover {
-		opacity: 0.5;
-	}
-
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-		object-position: center;
-	}
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 4px solid #000000;
+  color: #000000;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+.swiper-wrapper {
+  // width: 1000px;
 }
 
-.prev {
-	transform: rotate(180deg);
-	transform-origin: center;
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  margin: 30px;
+  overflow: hidden;
+}
+
+.swiper_pagination {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+}
+
+.swiper_pagination-current {
+  color: rgb(0, 0, 0);
+}
+
+.swiper-btns {
+  align-items: center;
+  justify-content: center;
+  // cursor: pointer;
+  // display: inline-block;
+  display: flex;
+  flex-direction: row;
+  // width: 400px;
+  // left:320px;
+  cursor: pointer;
+  top: -65px;
+  position: relative;
+}
+.mySwiper {
+  padding: 100px;
+  height: 500px;
+}
+
+.content {
+  z-index: 3;
 }
