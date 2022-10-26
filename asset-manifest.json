@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Landing-Rootz/static/css/main.e1865db3.css",
+    "main.css": "/Landing-Rootz/static/css/main.0d2b0272.css",
     "main.js": "/Landing-Rootz/static/js/main.87874716.js",
     "static/js/787.28525a86.chunk.js": "/Landing-Rootz/static/js/787.28525a86.chunk.js",
     "static/media/img plants.png": "/Landing-Rootz/static/media/img plants.791bd401255f5ea7f35c.png",
@@ -18,12 +18,12 @@
     "index.html": "/Landing-Rootz/index.html",
     "static/media/VectorLoginSmall.svg": "/Landing-Rootz/static/media/VectorLoginSmall.1700ae261abd9ab731f098f914a724e9.svg",
     "static/media/VectorLogin.svg": "/Landing-Rootz/static/media/VectorLogin.b993e697d0acbdcc2fe163a981169264.svg",
-    "main.e1865db3.css.map": "/Landing-Rootz/static/css/main.e1865db3.css.map",
+    "main.0d2b0272.css.map": "/Landing-Rootz/static/css/main.0d2b0272.css.map",
     "main.87874716.js.map": "/Landing-Rootz/static/js/main.87874716.js.map",
     "787.28525a86.chunk.js.map": "/Landing-Rootz/static/js/787.28525a86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1865db3.css",
+    "static/css/main.0d2b0272.css",
     "static/js/main.87874716.js"
   ]
 }
