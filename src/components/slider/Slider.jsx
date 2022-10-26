@@ -1,10 +1,10 @@
-import chevron_left from '../../materials/Chevron Left.png'
+import chevron_left from '../../assets/Chevron Left.png'
 import { Row, Col } from 'antd'
 import { useState, useRef, useEffect } from 'react'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import SwiperCore, { Pagination, Navigation, EffectCoverflow } from 'swiper'
 import styles from './Slider.module.scss'
-import bg from '../../materials/bg.png'
+import bg from '../../assets/bg.png'
 import slides from './SliderArray'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -24,8 +24,6 @@ const useSwiperRef = () => {
   return [wrapper, ref]
 }
 const Gallery = ({ slides, width }) => {
-  // const [navigationPrevEl, navigationPrevRef] = useSwiperRef()
-  // const [navigationNextEl, navigationNextRef] = useSwiperRef()
   const [paginationEl, paginationRef] = useSwiperRef()
   const navigationNextRef = useRef(null)
   const navigationPrevRef = useRef(null)
@@ -37,8 +35,36 @@ const Gallery = ({ slides, width }) => {
           centeredSlides={true}
           effect={'coverflow'}
           grabCursor={true}
-          slidesPerView={width <= 1200 ? 1 : 5}
-          spaceBetween={width <= 1200 ? 200 : 30}
+          slidesPerView={5}
+          spaceBetween={50}
+          breakpoints={{
+            310: {
+              slidesPerView: 1,
+              spaceBetween:100
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween:30
+
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween:70
+
+            },
+            1240: {
+              slidesPerView: 4,
+              spaceBetween:70
+
+            },
+            1650: {
+              slidesPerView: 4,
+              spaceBetween:100
+
+            }
+          }
+        }
+          // spaceBetween={100}
           // navigation={{
           //   nextEl: '.swiper-btn-next',
           //   prevEl: '.swiper-btn-prev',

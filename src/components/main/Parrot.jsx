@@ -1,5 +1,5 @@
-import parrot from '../materials/Parrot.png'
-import styles from '../components/main/Main.module.scss'
+import parrot from '../../assets/Parrot.svg'
+import styles from './Main.module.scss'
 const Parrot = () => {
   return (
 

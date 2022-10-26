@@ -7,7 +7,7 @@
   &__title {
     font-weight: 700;
     font-size: 34px;
-    line-height: 48px;
+    line-height: 40px;
 
     display: flex;
     align-items: center;
@@ -17,21 +17,54 @@
     padding: 90px 160px 30px 90px;
   }
   &__text {
-    padding: 0px 160px 30px 90px;
+    padding: 0px 160px 30px 80px;
 
     font-weight: 400;
     font-size: 13px;
+    min-width: 400px;
     line-height: 24px;
     letter-spacing: 0.3px;
-
     color: #333333;
+    a{
+    color: #333333;
+
+    }
   }
   &__second_title{
     @extend .Footer__title;
+    text-transform: none;
+
     font-size: 20px;
   }
   &__social_media{
 
     margin-right: 15px;
   }
+}
+
+@media (max-width: 800px) {
+
+Footer {
+  background: #f7f3f4;
+  padding:0px 20px;
+&__block{
+    margin-left:10px;
+}
+  &__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 10px;
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #333333;
+    padding: 10px;
+  }
+  &__text {
+
+    line-height: 10px;
+
+  }}
 }

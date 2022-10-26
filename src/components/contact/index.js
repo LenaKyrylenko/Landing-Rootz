@@ -6,10 +6,21 @@ const Form = () => {
   return (
     <div className={styles.Form} id="apply">
       <Row>
-        <Col span={10}>
+        <Col xl={{ span: 10 }}
+          md={{ span: 20 }}
+         xs={{ span: 17 }}
+          
+        
+        >
           <TextStarted />
         </Col>
-        <Col offset={1} span={13}>
+        <Col xl={{ span: 11 }}
+     
+          md={{ offset: 3, span: 18 }}
+          xs={{ offset: 3, span: 18 }}
+
+
+        >
           <Login />
         </Col>
       </Row>

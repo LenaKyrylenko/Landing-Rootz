@@ -8,10 +8,15 @@ const QA = () =>
   <div className={styles.QA}>
           <Row>
             
-            <Col span={12}>
+      <Col xl={{ span: 12 }}
+      md={{span:20}}
+      >
                 <TextReady />
             </Col>
-            <Col span={12}>
+      <Col xl={{ span: 12 }}
+      md={{span:20}}
+      
+      >
                 <QuestionAnswer question={" What can I do to protect our planet?"}
                     answer={`Not to make an open fire in nature and to clean up litter;
                  not to pollute open water bodies; to switch to alternative energy sources; to

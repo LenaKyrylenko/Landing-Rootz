@@ -1,109 +1,200 @@
-
 .Form {
-    // display: flex;
-    // flex-direction: column;
-    background: #ffbd9e;
-    border-radius: 20px;
-    margin: 0 200px;
   
-    padding: 0px 80px;
-    // display: flex;
-    // flex-direction: row;
-    flex: 1 1 auto;
-    // .Login{
-    // flex-direction: column;
+  background: #ffbd9e;
+  border-radius: 20px;
+  margin: 0 160px;
+
+  padding: 0px 80px;
+
+  flex: 1 1 auto;
+ 
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+
   
-    //   }
-  
-    &__title {
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 56px;
-      /* identical to box height, or 140% */
-      margin: 200px 0px 40px 0px;
+    margin: 200px 0px 40px 0px;
+    text-transform: capitalize;
+
+    color: #222433;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #1e1a20;
+    max-width: 380px;
+    vertical-align: baseline;
+    opacity: 0.9;
+  }
+  .Login {
+    padding: 40px;
+    margin: 100px 20px 100px 20px;
+
+    background: #f7f3f4;
+    border-radius: 16px;
+    p {
+      text-align: center;
+      font-weight: 600;
+      font-size: 32px;
+      padding: 20px;
+
       text-transform: capitalize;
-      // text-align: center;
-  
+
       color: #222433;
     }
-  
-    &__text {
-      //
-      // margin-right: auto;
-      // margin-left: auto;
-  
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 32px;
-      color: #1e1a20;
-      width: 380px;
-      vertical-align: baseline;
-      opacity: 0.9;
+    &__btn {
+      width: 90%;
+      padding: 20px;
+      margin: 20px;
     }
-    .Login {
-      padding: 40px;
-      margin: 100px 20px;
-  
-      background: #f7f3f4;
-      border-radius: 16px;
-      p {
-        text-align: center;
-        font-weight: 600;
-        font-size: 32px;
-        padding: 20px;
-        // line-height: 56px;
-        /* identical to box height, or 175% */
-  
-        text-transform: capitalize;
-  
-        color: #222433;
-      }
-      &__btn {
+    form {
+      display: block;
+
+      width: 100%;
+      color: white;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      input {
+        font-family: 'Poppins';
+        margin-bottom: 20px;
         width: 90%;
-        padding: 20px;
-        margin: 20px;
-      }
-      form {
-        display: block;
-  
-        width: 100%;
-        color: white;
-        margin-right: auto;
         margin-left: auto;
-        text-align: center;
-        input {
-        //   font-family: $fontFamily;
-          margin-bottom: 20px;
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-          box-sizing: border-box;
-          color: #807c7c;
-          border-radius: 40px;
-  
-          // display: flex;
-          // flex-direction: column;
-          // margin: 15px;
-          padding: 15px 20px;
-        }
+        margin-right: auto;
+        box-sizing: border-box;
+        color: #807c7c;
+        border-radius: 40px;
+        padding: 15px 20px;
       }
+    }
+    &__vector1 {
+      position: absolute;
+      left: 450px;
+      top: 90px;
+      transition: 0.3s ease-in-out;
+      z-index: 3;
+    }
+
+    &__vector2 {
+      position: absolute;
+      z-index: 3;
+
+      left: 480px;
+      top: 180px;
+      transition: 0.3s ease-in-out;
+    }
+    &:hover {
       &__vector1 {
-        // position: relative;
-        // display: flex;
-  
-        // margin-left: 60px;
-        top: 80px;
-        position: absolute;
-        left: 470px;
+        margin-left: 400px;
+        margin-top: -40px;
       }
+
       &__vector2 {
-        // position: relative;
-        // display: flex;
-        float: right;
-        top: 170px;
-        left: 480px;
-  
-        position: absolute;
+        margin-left: 410px;
       }
     }
   }
+}
+@media (max-width: 1300px) {
+  .Login {
+    &__vector1 {
+      top: 160px;
+      z-index: 3;
+    }
+    &__vector2 {
+      top: 200px;
+      z-index: 3;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .Form {
+    margin: 0 50px;
+    padding: 0px 50px;
+  }
+  .Login {
+    padding: 30px;
+    p {
+      font-size: 30px;
+    }
+
+    form {
+      display: block;
+
+      width: 100%;
+      color: white;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      input {
+        font-family: 'Poppins';
+        margin-bottom: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        color: #807c7c;
+        border-radius: 40px;
+      }
+    }
+    &__vector1 {
+      top: 80px;
+      position: fixed;
+      left: 470px;
+    }
+    &__vector2 {
+      float: right;
+      top: 170px;
+      left: 480px;
+
+      position: fixed;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .Form {
+    margin: 0 10px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    &__text {
+      margin-left: auto;
+      margin-right: auto;
+      margin-left:80px;
+      width: 500px;
+
+    }
+    &__title {
+     width: 600px;
+      margin: 50px 0px;
+    }
+  }
+  .Login {
+    padding:50px 30px;
+    margin:0px;
+
+    p {
+      font-size: 30px;
+    }
+
+    &__vector1 {
+      top: 80px;
+      position: fixed;
+      left: 470px;
+    }
+    &__vector2 {
+     
+      float: right;
+      top: 170px;
+      left: 480px;
+
+      position: fixed;
+    }
+  }
+}

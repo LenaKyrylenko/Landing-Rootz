@@ -1,8 +1,8 @@
-import img_main from '../../materials/img-main.png'
-import img_plants from '../../materials/img plants.png'
-import img_energy from '../../materials/img energy.png'
-import img_plastic from '../../materials/img plastic.png'
-import img_organic from '../../materials/img organic.png'
+import img_main from '../../assets/img-main.png'
+import img_plants from '../../assets/img plants.png'
+import img_energy from '../../assets/img energy.png'
+import img_plastic from '../../assets/img plastic.png'
+import img_organic from '../../assets/img organic.png'
 
 const slides = [
      {
