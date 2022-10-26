@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Landing-Rootz/static/css/main.e1865db3.css",
+    "main.js": "/Landing-Rootz/static/js/main.87874716.js",
+    "static/js/787.28525a86.chunk.js": "/Landing-Rootz/static/js/787.28525a86.chunk.js",
+    "static/media/img plants.png": "/Landing-Rootz/static/media/img plants.791bd401255f5ea7f35c.png",
+    "static/media/img organic.png": "/Landing-Rootz/static/media/img organic.29eedc84de6d644c5b14.png",
+    "static/media/img 3.png": "/Landing-Rootz/static/media/img 3.f86eff6b6dfc1d1627ea.png",
+    "static/media/img 1.png": "/Landing-Rootz/static/media/img 1.eb77c265cfca5e56fec3.png",
+    "static/media/img 2.png": "/Landing-Rootz/static/media/img 2.7346a169ad78b436f037.png",
+    "static/media/img-main.png": "/Landing-Rootz/static/media/img-main.e79f3d341f142968f9a2.png",
+    "static/media/img plastic.png": "/Landing-Rootz/static/media/img plastic.6673935c4274eaa9bb81.png",
+    "static/media/img energy.png": "/Landing-Rootz/static/media/img energy.11066ae9707472e596f3.png",
+    "static/media/Headline.png": "/Landing-Rootz/static/media/Headline.b330c98743d52eb94895.png",
+    "static/media/Parrot.svg": "/Landing-Rootz/static/media/Parrot.56aecec0856b9bc983a99df8d42918f4.svg",
+    "static/media/bg.png": "/Landing-Rootz/static/media/bg.4ac9b95a0ecccd6b376d.png",
+    "static/media/logo.svg": "/Landing-Rootz/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Landing-Rootz/index.html",
+    "static/media/VectorLoginSmall.svg": "/Landing-Rootz/static/media/VectorLoginSmall.1700ae261abd9ab731f098f914a724e9.svg",
+    "static/media/VectorLogin.svg": "/Landing-Rootz/static/media/VectorLogin.b993e697d0acbdcc2fe163a981169264.svg",
+    "main.e1865db3.css.map": "/Landing-Rootz/static/css/main.e1865db3.css.map",
+    "main.87874716.js.map": "/Landing-Rootz/static/js/main.87874716.js.map",
+    "787.28525a86.chunk.js.map": "/Landing-Rootz/static/js/787.28525a86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1865db3.css",
+    "static/js/main.87874716.js"
+  ]
+}
