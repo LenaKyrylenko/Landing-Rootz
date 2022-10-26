@@ -7,19 +7,15 @@
   }
   height: 600px;
   padding: 100px 0px;
-  // display: inline-block;
 }
 ._container {
   align-items: center;
 }
 
 .slide_item {
-//   height: 503px;
-//   width: 600px;
   position: relative;
 
   @media screen and (max-width: 640px) {
-    //height: 300px;
   }
 }
 
@@ -31,7 +27,6 @@
   position: absolute;
   margin-top: 60px;
   transform: scale(1.2);
-  // margin:0px 0px;
 }
 .active_photo {
   position: absolute;
@@ -41,12 +36,9 @@
   height: 110px;
   top: 30px;
   left: -30px;
-  // z-index: 6;
 }
 
-
 .slide_text {
-
   text-align: center;
   width: 220px;
   margin: 20px;
@@ -56,7 +48,6 @@
   align-items: center;
   justify-content: center;
   top: 160px;
-
 }
 
 .slide_title {
@@ -143,69 +134,51 @@
 }
 
 @media screen and (max-width: 660px) {
- 
-
   .slide_bg {
     position: absolute;
     margin-top: 60px;
     transform: scale(1.2);
-    // margin:0px 0px;
-  
 
-  max-width: 350px;
-  margin-top:40px;
-  margin-left: 150px;
-  float: left;
-}
-.active_photo {
-  top: 10px;
-  left: 120px;
-  // z-index: 6;
-}
-.slide_active_title{
-  margin-left: 230px;
-}
+    max-width: 350px;
+    margin-top: 40px;
+    margin-left: 150px;
+    float: left;
+  }
+  .active_photo {
+    top: 10px;
+    left: 120px;
+  }
+  .slide_active_title {
+    margin-left: 230px;
+  }
 
-.slide_text {
-  left: 180px;
-
-  top: 160px;
-
-}
-
-
+  .slide_text {
+    left: 180px;
+  }
 }
 
 @media screen and (max-width: 480px) {
- 
-
   .slide_bg {
     position: absolute;
     margin-top: 60px;
     transform: scale(1.2);
-    // margin:0px 0px;
-  
 
-  max-width: 300px;
-  margin-top: 30px;
-  margin-left: 50px;
-  float: left;
-}
-.active_photo {
-  top: 10px;
-  left: 40px;
-  // z-index: 6;
-}
-.slide_active_title{
-  margin-left: 130px;
-}
+    max-width: 300px;
+    margin-top: 30px;
+    margin-left: 50px;
+    float: left;
+  }
+  .active_photo {
+    top: 10px;
+    left: 40px;
+  }
+  .slide_active_title {
+    margin-left: 130px;
+  }
 
-.slide_text {
-  left: 50px;
+  .slide_text {
+    left: 50px;
 
-  top: 160px;
-
-}
-
-
+    top: 160px;
+  }
 }
